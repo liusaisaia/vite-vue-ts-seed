@@ -4,7 +4,7 @@
  * @Date: 2023-05-11 23:40:01
  * @LastEditors: Liu SaiSai
  */
-import axios from 'axios';
+import axios from 'axios'
 
 /*
  * 创建实例
@@ -12,7 +12,7 @@ import axios from 'axios';
  */
 const HttpClient = axios.create({
   baseURL: import.meta.env.VITE_BASE_URL,
-});
+})
 
 /**
  * 请求拦截器
@@ -20,15 +20,15 @@ const HttpClient = axios.create({
  */
 HttpClient.interceptors.request.use(
   (config) => {
-    const token = '222';
-    config.headers.authorization = 'Bearer ' + token;
-    return config;
+    const token = '222'
+    config.headers.authorization = `Bearer ${token}`
+    return config
   },
   (error) => {
-    console.error('网络错误，请稍后重试');
-    return Promise.reject(error);
+    console.error('网络错误，请稍后重试')
+    return Promise.reject(error)
   },
-);
+)
 
 /**
  * 响应拦截器
@@ -36,11 +36,11 @@ HttpClient.interceptors.request.use(
  */
 HttpClient.interceptors.response.use(
   (config) => {
-    return config;
+    return config
   },
   (error) => {
-    return Promise.reject(error);
+    return Promise.reject(error)
   },
-);
+)
 
-export default HttpClient;
+export default HttpClient
