@@ -66,6 +66,8 @@ export default () => {
       alias: {
         '@': path.resolve('./src'), // @代替src
         '#': path.resolve('./types'), // #代替types
+        '~/': `${path.resolve(__dirname, 'src')}/`,
+        'vue-i18n': 'vue-i18n/dist/vue-i18n.cjs.js',
       },
     },
     css: {
