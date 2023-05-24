@@ -5,7 +5,7 @@
  * @LastEditors: Liu SaiSai
  */
 import { createApp } from 'vue'
-import './style.css'
+import './assets/styles/main.scss'
 
 // pinia
 import { createPinia } from 'pinia'
