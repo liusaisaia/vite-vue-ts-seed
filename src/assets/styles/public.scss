@@ -1,0 +1,19 @@
+/* stylelint-disable selector-class-pattern */
+
+/* input 输入框读取浏览器默认值背景颜色问题 */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: color 99999999s ease-out, background-color 99999999s ease-out;
+  transition-delay: 99999999s;
+}
+
+/* element 组件样式变量 */
+:root {
+  --el-border-radius-small: 8px;
+  --el-border-radius-base: 8px;
+  --el-header-height: 80px !important;
+  --el-table-header-text-color: $header-color;
+  --el-text-color-secondary: #2b2b42;
+}
