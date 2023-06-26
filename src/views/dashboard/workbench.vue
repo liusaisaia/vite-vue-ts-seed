@@ -11,7 +11,9 @@
 </script>
 
 <template>
-  <div class="main-content content-collapse">这是测试啊</div>
+  <div class="main-content content-collapse">
+    这是测试啊
+  </div>
 </template>
 
 <style scoped></style>
